@@ -1,6 +1,4 @@
 fn main() {
-    println!("Lyrics to the 12 Days of Christmas!");
-
     let ordinals = ["first", "second", "third", "fourth", "fifth",
     "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
 
@@ -10,7 +8,7 @@ fn main() {
     "twelve drummers drumming"];
 
     for i in 0..12 {
-        println!("On the {} day of Christmas my true love gave to me: {}", ordinals[i], lyrics[i]);
+        println!("On the {} day of Christmas, my true love gave to me:\n\t{}", ordinals[i], lyrics[i]);
 
         let mut j: usize = i;
         loop {
@@ -21,6 +19,5 @@ fn main() {
                 println!("\t{}", lyrics[j]);
             }
         }
-       
     }
 }
